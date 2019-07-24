@@ -15,6 +15,7 @@ import {
   frontpageDataRegexPath,
   frontpageManifestRegexPath,
   frontpageSwRegexPath,
+  mediaRadioRegexArray,
 } from '../app/routes/regex';
 import nodeLogger from '../app/lib/logger.node';
 import renderDocument from './Document';
@@ -126,7 +127,7 @@ if (process.env.APP_ENV === 'local') {
  */
 
 server
-  .get([articleSwRegexPath, frontpageSwRegexPath], (req, res) => {
+  .get([articleSwRegexPath].push(mediaRadioRegexArray), (req, res) => {
     const swPath = `${__dirname}/public/sw.js`;
     res.sendFile(swPath, {}, error => {
       if (error) {

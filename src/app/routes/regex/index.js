@@ -9,11 +9,9 @@ const ampRegex = '.amp';
 const buildMediaRoutes = servicesWithMedia =>
   Object.keys(servicesWithMedia)
     .map(service => {
-      return servicesWithMedia[service]
-        .map(sid => {
-          return `/:service(${service})/${sid}}/:pid(${anyLengthAlphaNumeric})`;
-        })
-        .join('|');
+      return `/:service(${service})/(${servicesWithMedia[service].join(
+        '|',
+      )})/:pid(${anyLengthAlphaNumeric})`;
     })
     .join('|');
 
@@ -33,10 +31,6 @@ export const frontpageManifestRegexPath = `/:service(${serviceRegex})/manifest.j
 
 export const frontpageSwRegexPath = `/:service(${serviceRegex})/sw.js`;
 
-export const mediaRadioRegex = `(${buildMediaRoutes(servicesWithRadio)})`;
+export const mediaRadioRegexArray = buildMediaRoutes(servicesWithRadio);
 
-export const mediaTvRegex = `(${buildMediaRoutes(servicesWithTv)})`;
-
-console.log('mediaRadioRegex', mediaRadioRegex);
-
-console.log('mediaTvRegex', mediaTvRegex);
+export const mediaTvRegexArray = buildMediaRoutes(servicesWithTv);

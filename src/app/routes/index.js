@@ -2,7 +2,7 @@ import Article from '../containers/Article';
 import FrontPage from '../containers/FrontPage';
 import getArticleInitialData from './getInitialData/article';
 import getFrontpageInitialData from './getInitialData/frontpage';
-import { articleRegexPath, frontpageRegexPath } from './regex';
+import { articleRegexPath, mediaRadioRegexArray } from './regex';
 
 const routes = [
   {
@@ -13,7 +13,7 @@ const routes = [
     pageType: 'article',
   },
   {
-    path: frontpageRegexPath,
+    path: mediaRadioRegexArray,
     exact: true,
     component: FrontPage,
     getInitialData: getFrontpageInitialData,
