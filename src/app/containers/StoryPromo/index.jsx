@@ -4,8 +4,10 @@ import StoryPromoComponent, {
   Headline,
   Summary,
   Link,
+  LiveLabel,
 } from '@bbc/psammead-story-promo';
 import Timestamp from '@bbc/psammead-timestamp-container';
+import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import pathOr from 'ramda/src/pathOr';
 import { storyItem } from '../../models/propTypes/storyItem';
 import ImageWithPlaceholder from '../ImageWithPlaceholder';
@@ -57,17 +59,33 @@ const StoryPromo = ({ item, lazyLoadImage, topStory }) => {
   const url = pathOr(null, ['locators', 'assetUri'], item);
   const summary = pathOr(null, ['summary'], item);
   const timestamp = pathOr(null, ['timestamp'], item);
+  const isLive = pathOr(null, ['cpsType'], item) === 'LIV';
 
   if (!headline || !url) {
     return null;
   }
 
+  const LiveComponent = () => (
+    /* eslint-disable-next-line jsx-a11y/aria-role */
+    <span role="text">
+      <LiveLabel service={service} dir="ltr">
+        LIVE
+      </LiveLabel>
+      <VisuallyHiddenText lang="en-GB">Live, </VisuallyHiddenText>
+      {headline}
+    </span>
+  );
+
   const Info = (
     <Fragment>
       {headline && (
         <Headline script={script} service={service} topStory={topStory}>
-          <Link href={url}>
-            <LinkContents item={item} />
+          <Link href={url} isLive>
+            {isLive ? (
+              <LiveComponent service={service} headline={headline} />
+            ) : (
+              <LinkContents item={item} />
+            )}
           </Link>
         </Headline>
       )}
@@ -103,6 +121,7 @@ const StoryPromo = ({ item, lazyLoadImage, topStory }) => {
         <MediaIndicator item={item} topStory={topStory} service={service} />
       }
       topStory={topStory}
+      isLive={isLive}
     />
   );
 };

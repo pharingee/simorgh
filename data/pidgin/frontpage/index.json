@@ -226,6 +226,181 @@
           },
           {
             "headlines": {
+              "headline": "Pishures from our reporters from some parts of Nigeria wey dey cover di elections"
+            },
+            "locators": {
+              "assetUri": "/pidgin/tori-47246806",
+              "cpsUrn": "urn:bbc:content:assetUri:pidgin/tori-47246806"
+            },
+            "summary": "BBC get reporters for all di 36 states and Abuja to cover and report how di 2019 elections go take waka for Nigeria.",
+            "timestamp": 1550171514,
+            "passport": {
+              "category": {
+                "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
+                "categoryName": "News"
+              },
+              "campaigns": [
+                {
+                  "campaignId": "5a988e3e39461b000e9dabfb",
+                  "campaignName": "WS - Keep me on trend"
+                },
+                {
+                  "campaignId": "5a988e4739461b000e9dabfc",
+                  "campaignName": "WS - Update me"
+                }
+              ]
+            },
+            "cpsType": "PGL",
+            "indexImage": {
+              "id": "105654743",
+              "subType": "index",
+              "href": "http://c.files.bbci.co.uk/87B9/production/_105654743_dafe43b3-ba90-4006-ac42-7fc11972e697.jpg",
+              "path": "/cpsprodpb/87B9/production/_105654743_dafe43b3-ba90-4006-ac42-7fc11972e697.jpg",
+              "height": 549,
+              "width": 976,
+              "altText": "INEC adhoc staff dey check im posting",
+              "caption": "Ah! I never see my name oh. Dis INEC adhoc staff dey check wia dem post am go for Kano State",
+              "copyrightHolder": "BBC Sport"
+            },
+            "options": {
+              "isBreakingNews": false,
+              "isFactCheck": false
+            },
+            "id": "urn:bbc:ares::asset:pidgin/tori-47246806",
+            "type": "cps"
+          },
+          {
+            "headlines": {
+              "headline": "I realise my World Cup dream afta 14 years"
+            },
+            "locators": {
+              "assetUri": "/pidgin/media-48519295",
+              "cpsUrn": "urn:bbc:content:assetUri:pidgin/media-48519295"
+            },
+            "summary": "South Africa captain Janine van Wyk dey lead di Bayana Bayana to go hustle for di Women’s World Cup for di first time ever!",
+            "timestamp": 1559845333,
+            "passport": {
+              "category": {
+                "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
+                "categoryName": "News"
+              },
+              "campaigns": [
+                {
+                  "campaignId": "5a988e3739461b000e9dabfa",
+                  "campaignName": "WS - Give me perspective"
+                }
+              ]
+            },
+            "cpsType": "MAP",
+            "media": {
+              "id": "p07cfpl4",
+              "subType": "clip",
+              "format": "video",
+              "title": "I dey realise my World Cup Dream afta 14 years",
+              "synopses": {
+                "short": "France 2019 Women's World Cup: Janine van Wyk go lead South Africa compete for first time",
+                "long": "Janine van Wyk don play for South Africa Women's team for 14 years. \n\nBut dis summer, for di first di captain go lead di Banyana Banyana go France 2019 World Cup. \n\nShe discuss her dreams, determination and development wit BBC Sport Africa inside dis BBC Africa one minute tori.\n\nDis na behind dis scenes wit South Africa captain wey dey lead di Bayana Bayana to go husle for di Women’s World Cup for di first time ever!",
+                "medium": "Dis na behind dis scenes wit South Africa captain wey dey lead di Bayana Bayana to go husle for di Women’s World Cup for difirst time ever!"
+              },
+              "imageUrl": "ichef.bbci.co.uk/images/ic/$recipe/p07cfs3f.jpg",
+              "embedding": true,
+              "advertising": false,
+              "caption": "Janine van Wyk go lead South Africa go di Women's World Cup for di first time.",
+              "versions": [
+                {
+                  "versionId": "p07cfpl6",
+                  "types": [
+                    "Original"
+                  ],
+                  "duration": 100,
+                  "durationISO8601": "PT1M40S",
+                  "warnings": {},
+                  "availableTerritories": {
+                    "uk": true,
+                    "nonUk": true
+                  },
+                  "availableFrom": 1559844782
+                }
+              ],
+              "imageCopyright": "BBC"
+            },
+            "indexImage": {
+              "id": "107279994",
+              "subType": "index",
+              "href": "http://c.files.bbci.co.uk/C34D/production/_107279994_p07cfs3f.jpg",
+              "path": "/cpsprodpb/C34D/production/_107279994_p07cfs3f.jpg",
+              "height": 549,
+              "width": 976,
+              "altText": "Janine van Wyk",
+              "copyrightHolder": "BBC"
+            },
+            "options": {
+              "isBreakingNews": false,
+              "isFactCheck": false
+            },
+            "id": "urn:bbc:ares::asset:pidgin/media-48519295",
+            "type": "cps"
+          },
+          {
+            "headlines": {
+              "headline": "BBC Governorship Debate for Delta State: Live updates as e happun"
+            },
+            "locators": {
+              "assetUri": "/pidgin/live/tori-47126982",
+              "cpsUrn": "urn:bbc:content:assetUri:pidgin/live/tori-47126982"
+            },
+            "summary": "Candidates ansa kweshion about dia policies and how dem wan take move Delta State forward.",
+            "timestamp": 1549524126,
+            "passport": {
+              "category": {
+                "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/Feature",
+                "categoryName": "Feature"
+              },
+              "campaigns": [
+                {
+                  "campaignId": "5a988e3739461b000e9dabfa",
+                  "campaignName": "WS - Give me perspective"
+                },
+                {
+                  "campaignId": "5a988e3e39461b000e9dabfb",
+                  "campaignName": "WS - Keep me on trend"
+                },
+                {
+                  "campaignId": "5a988e4739461b000e9dabfc",
+                  "campaignName": "WS - Update me"
+                }
+              ]
+            },
+            "cpsType": "LIV",
+            "indexImage": {
+              "id": "105545120",
+              "subType": "index",
+              "href": "http://c.files.bbci.co.uk/086A/production/_105545120_firstindex.jpg",
+              "path": "/cpsprodpb/086A/production/_105545120_firstindex.jpg",
+              "height": 549,
+              "width": 976,
+              "altText": "BBC Governorship Debate for Delta State",
+              "copyrightHolder": "BBC"
+            },
+            "commentary": {
+              "order": "descending",
+              "assetUUID": "8E9FE9961DED1E4E82D7EDCD2656F79A",
+              "channels": {
+                "enhancedmobile": "bbc.cps.asset.47126985_EnhancedMobile",
+                "desktop": "bbc.cps.asset.47126985_HighWeb",
+                "highweb": "bbc.cps.asset.47126985_HighWeb",
+                "mobile": "bbc.cps.asset.47126985_EnhancedMobile"
+              }
+            },
+            "options": {
+              "isBreakingNews": false,
+              "isFactCheck": false
+            },
+            "id": "urn:bbc:ares::asset:pidgin/live/tori-47126982",
+            "type": "cps"
+          },
+          {
+            "headlines": {
               "headline": "Majid Waris no get ‘sɛlɛ’ for Coach Kwesi Appiah en Black Stars Afcon squad"
             },
             "locators": {
@@ -4838,51 +5013,6 @@
             "assetTypeCode": "PRO",
             "timestamp": 1550253262,
             "type": "link"
-          },
-          {
-            "headlines": {
-              "headline": "Pishures from our reporters from some parts of Nigeria wey dey cover di elections"
-            },
-            "locators": {
-              "assetUri": "/pidgin/tori-47246806",
-              "cpsUrn": "urn:bbc:content:assetUri:pidgin/tori-47246806"
-            },
-            "summary": "BBC get reporters for all di 36 states and Abuja to cover and report how di 2019 elections go take waka for Nigeria.",
-            "timestamp": 1550171514,
-            "passport": {
-              "category": {
-                "categoryId": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
-                "categoryName": "News"
-              },
-              "campaigns": [
-                {
-                  "campaignId": "5a988e3e39461b000e9dabfb",
-                  "campaignName": "WS - Keep me on trend"
-                },
-                {
-                  "campaignId": "5a988e4739461b000e9dabfc",
-                  "campaignName": "WS - Update me"
-                }
-              ]
-            },
-            "cpsType": "PGL",
-            "indexImage": {
-              "id": "105654743",
-              "subType": "index",
-              "href": "http://c.files.bbci.co.uk/87B9/production/_105654743_dafe43b3-ba90-4006-ac42-7fc11972e697.jpg",
-              "path": "/cpsprodpb/87B9/production/_105654743_dafe43b3-ba90-4006-ac42-7fc11972e697.jpg",
-              "height": 549,
-              "width": 976,
-              "altText": "INEC adhoc staff dey check im posting",
-              "caption": "Ah! I never see my name oh. Dis INEC adhoc staff dey check wia dem post am go for Kano State",
-              "copyrightHolder": "BBC Sport"
-            },
-            "options": {
-              "isBreakingNews": false,
-              "isFactCheck": false
-            },
-            "id": "urn:bbc:ares::asset:pidgin/tori-47246806",
-            "type": "cps"
           },
           {
             "headlines": {
