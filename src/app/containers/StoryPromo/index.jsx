@@ -60,6 +60,12 @@ const StoryPromo = ({ item, lazyLoadImage, topStory }) => {
   const summary = pathOr(null, ['summary'], item);
   const timestamp = pathOr(null, ['timestamp'], item);
   const isLive = pathOr(null, ['cpsType'], item) === 'LIV';
+  const timeNow = Math.round(new Date().getTime() / 1000);
+  let isRelative = true;
+
+  if (timeNow - timestamp > 86400) {
+    isRelative = false;
+  }
 
   if (!headline || !url) {
     return null;
@@ -103,6 +109,7 @@ const StoryPromo = ({ item, lazyLoadImage, topStory }) => {
           script={script}
           padding={false}
           service={service}
+          isRelative={isRelative}
         />
       )}
     </Fragment>
